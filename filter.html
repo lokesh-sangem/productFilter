@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./filter.css">
+  <script src="https://kit.fontawesome.com/14739cd866.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="bg-container">
+    <d class="input-container" >
+      <ul class="items">
+      <li ><i class="fa fa-search size" aria-hidden="true"></i></li> <li><input type="text" class="search-input" id="search" placeholder="search......" /></li>
+    
+    
+    <li><button id="searchBtn"  class="search-btn">Enter</button></li>
+  </ul>
+      <!-- categories -->
+
+      <!-- <form style="border-radius:5px;">
+        <label for="search">Search bar</label><br><br>
+        <div class="flex-container1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+         
+        <input type="search" id="search" name="search" placeholder="&#xe5c5" >
+      </div>
+        <small>Format:abcdefgh</small><br>
+    </form> -->
+      <!-- <ul class="items" style="list-style-type:none;margin:3px;display:inline";
+      text-decoration:none;>
+          <li><a href="#">Company</a></li>
+          <li><a href="./All.html">All</a></li>
+          <li><a href="./Likea.html">Ikea</a></li>
+          <li><a href="./Marcos.html">Marcos</a></li>
+          <li><a href="./Caresssa.html">Caresssa</a></li>
+          <li><a href="./liddy.html">Liddy</a></li>
+      
+      </ul> -->
+      
+
+
+
+      
+      <ul  class="items" >
+      <li><h5 style="margin-top:17px;">Company</h5></li>
+      <!-- <article class="brand "> -->
+        
+
+        <li><a href="#" class="btn1 active" onclick="showProducts('all', event)">all</a></li>
+        <li><a href="#" class="btn1" onclick="showProducts('ikea', event)">ikea</a></li>
+        <li><a href="#" class="btn1" onclick="showProducts('marcos', event)">marcos</a></li>
+        <li><a href="#" class="btn1" onclick="showProducts('Caressa', event)">Caressa</a></li>
+        <li><a href="#" class="btn1" onclick="showProducts('Liddy', event)">Liddy</a></li>
+      </ul>
+      <!-- </article> -->
+    
+    </div>
+    <div id="store-Products" class="products-container">
+      <div class="container-row">
+        <div class="container1 shadow" data-category="ikea">
+          <img src="./product-1.jpeg" class="img1">
+          <h1 class="image-head">High-Back Bench</h1>
+          <p class="price">9.99</p>
+        </div>
+        <div class="container1 shadow" data-category="ikea">
+          <img src="./product-2.jpeg" class="img1">
+          <h1 class="image-head">Albany Table</h1>
+          <p class="price">79.99</p>
+        </div>
+        <div class="container1 shadow" data-category="ikea">
+          <img src="./product-3.jpeg" class="img1">
+          <h1 class="image-head">Accent Chair</h1>
+          <p class="price">25.99</p>
+        </div>
+      </div>
+      <!-- Add other product containers with appropriate data-category values -->
+      <div class="container-row">
+        <div class="container1 shadow" data-category="Caressa">
+          <img src="./product-4.jpeg" class="img1">
+          <h1 class="image-head">Wooden Table</h1>
+          <p class="price">45.99</p>
+        </div>
+        <div class="container1 shadow" data-category="Caressa">
+          <img src="./product-5.jpeg" class="img1">
+          <h1 class="image-head">Dinning Table</h1>
+          <p class="price">6.99</p>
+        </div>
+        <div class="container1 shadow" data-category="Caressa">
+          <img src="./product-6.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+      </div>
+      <div class="container-row" data-category="Liddy">
+        <div class="container1 shadow">
+          <img src="./product-7.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+        <div class="container1 shadow" data-category="Liddy">
+          <img src="./product-8.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+        <div class="container1 shadow" data-category="Liddy">
+          <img src="./product-9.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+      </div>
+      <div class="container-row" data-category="marcos">
+        <div class="container1 shadow">
+          <img src="./product-10.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+        <div class="container1 shadow" data-category="marcos">
+          <img src="./product-11.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+        <div class="container1 shadow" data-category="marcos">
+          <img src="./product-12.jpeg" class="img1">
+          <h1 class="image-head">Sofa set</h1>
+          <p class="price">69.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    const search = document.getElementById("search");
+    const searchBtn = document.getElementById("searchBtn");
+    const productContainers = document.querySelectorAll('.container1');
+    searchBtn.addEventListener("click", function () {
+      filterProducts();
+    });
+    search.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        filterProducts();
+      }
+    });
+    function filterProducts() {
+      const searchValue = search.value.toLowerCase().trim();
+      productContainers.forEach(function (container) {
+        if (container.querySelector(".image-head").innerText.toLowerCase().includes(searchValue)) {
+          container.style.display = 'block';
+        } else {
+          container.style.display = 'none';
+        }
+      });
+    }
+    function showProducts(category, event) {
+      event.preventDefault(); // Prevent default link behavior
+      productContainers.forEach(function (container) {
+        if (category === 'all' || container.dataset.category === category) {
+          container.style.display = 'block';
+        } else {
+          container.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
